@@ -1,9 +1,58 @@
-p h1 h2 h3 h4{
-    font-family:'Tahoma',sans-serif;
+p, h1, h2, h3, h4{
+   font-family:'Tahoma',sans-serif;
 }
 
 /* ========== header -Katya =============*/
+#header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/laptop-coffee-1940x900_35055.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
+nav{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+a.brand-logo img{
+    display: inline-block;
+    margin: 15px;
+}
+
+ul.menu li a{
+    color: rgb(109,110,113);
+    /*padding:10px 5px;*/
+    font-weight: bold;
+}
+ul.menu li a:hover{
+    color:#fff;
+    background: rgba(153,204,204, 0.4);
+}
+
+.header{
+    position: absolute;
+    max-height:200px;
+    left:0;
+    right: 0;
+    top:0;
+    bottom:0;
+    width:100%;
+    margin: auto 0;
+    text-align: center;
+    color: rgb(0,166,227);
+}
+
+.header h1, .header p{
+    font-weight: bold;
+}
+
+#header p{
+    line-height: 1.1;
+    font-size: 2.28rem;
+}
 /* mobile menu - Katya*/
 
 /*========= some stuff  -Gleb=========== */
