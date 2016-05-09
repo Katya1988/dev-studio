@@ -1,9 +1,40 @@
+p h1 h2 h3 h4{
+    font-family:'Tahoma',sans-serif;
+}
+
 /* ========== header -Katya =============*/
 
 /* mobile menu - Katya*/
 
 /*========= some stuff  -Gleb=========== */
+.blocktwo{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    }
+    .Absolute-Center {
+        width: 60%;
+        height: 60%;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        line-height: 1.8;
+    }
 
+    p{
+        font-family: Tahoma;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #855512;
+        margin: 0;
+        padding: 0;
+        }
+
+    #floatimg{
+        float: left;
+        width: 40%;
+        margin: 0 20px 0 0;
+        }
 /*========== Internatura -Katya======== */
 
 /*=============Tabs - Katya-============ */
@@ -16,4 +47,21 @@
 /* Footer  */
 
 /* button Up */
+@media screen and (max-width:746px) {
+    #floatimg {
+        width: 100%;
+    }
+}
 
+@media screen and (max-width:428px){
+    #header p{
+        line-height: 1.1;
+        font-size: 1.5rem;
+    }
+    .Absolute-Center{
+        width: 90%;
+    }
+    #floatimg{
+        width: 100%;
+    }
+}
