@@ -60,6 +60,7 @@ ul.menu li a:hover{
     width: 100%;
     height: 100vh;
     background-image: url(images/background.jpg);
+    position: relative;
     }
     .Absolute-Center {
         width: 60%;
@@ -84,7 +85,7 @@ ul.menu li a:hover{
         width: 40%;
         margin: 0 20px 0 0;
         }
-/*========== Internatura -Katya======== */
+/*========== Internatura -Katya========= */
 
 /*=============Tabs - Katya-============ */
 
