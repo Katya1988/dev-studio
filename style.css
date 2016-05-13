@@ -4,7 +4,7 @@ p, h1, h2, h3, h4{
 
 /* ========== header -Katya =============*/
 #header{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url("images/laptop-coffee-1940x900_35055.jpg");
     background-size: cover;
@@ -55,22 +55,30 @@ ul.menu li a:hover{
 
 /*========= some stuff  -Gleb=========== */
 .clearfix{
+    content: "";
     clear: both;
 }
 .blockBackground{
     width: 100%;
-    min-height: 100vh;
+    min-height:100vh;
+    height: auto;
     background-image: url(images/background.jpg);
     position: relative;
+    padding:9% 0 9% 0;
     }
     .Absolute-Center {
         width: 60%;
-        height: 50vh;
+        height: auto;
         margin: auto;
-        position: absolute;
+        position: inherit;
         top: 0; left: 0; bottom: 0; right: 0;
         line-height: 1.8;
+
     }
+        #loginform{
+            text-align: center;
+
+        }
 
         .textblock  {
             font-family: Tahoma,sans-serif;
@@ -91,7 +99,7 @@ ul.menu li a:hover{
 /*========== Internatura -Katya========= */
     #intern{
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         background-image: url(images/jumbotron.jpg);
         background-size: cover;
         background-position: center;
@@ -120,7 +128,7 @@ img.mark{
 
     #tech{
         height: 100vh;
-        width:100vw;
+        width:100%;
         background-image: url("images/background.jpg");
         background-size: cover;
         background-position: center center;
@@ -280,28 +288,50 @@ img.mark{
 /*===============Slider- Gleb=============== */
 
 /*=========contact form -Gleb=============== */
-#loginform{
-    text-align: center;
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: transparent!important;
+    border: 2px solid #747272 !important;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0 !important;
+    outline: none !important;
+    height: 2rem !important;
+    width: 40%!important;
+    font-size: 1rem !important;
+    margin: 0 0 15px 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    box-sizing: content-box !important;
+    transition: all 0.3s !important;
+    box-shadow: none !important;
 }
 
 input{
-    background-color: transparent;
-    border: 2px solid #747272 ;
-    outline: none;
-    height: 3rem;
-    width: 20%;
-    font-size: 1rem;
-    margin: 0 0 15px 0;
-    padding: 0;
-    box-sizing: content-box;
+    background-color: transparent !important;
+    border: 2px solid #747272 !important;
+    outline: none !important;
+    height: 2rem !important;
+    width: 40% !important;
+    font-size: 1rem !important;
+    margin: 0 auto 15px auto !important;
+    padding: 0 !important;
+    box-sizing: content-box !important;
+    box-shadow: none !important;
+
 }
 
 .submitbutton{
-    width: 150px;
-    font-weight:bold;
-    margin: 0 auto;
-    border-radius: 5px ;
-    color: #855512;
+    width: 150px !important;
+    font-weight:bold !important;
+    border-radius: 5px  !important;
+    color: #855512 !important;
+    margin: auto
+
+}
+
+
+button:focus {
+    outline: none;
+    background-color: #DDDDDD;
 }
 
 .contextone{
@@ -330,8 +360,11 @@ input{
     #floatimg {
         width: 100%;
     }
-}
 
+    .jcarousel {
+        height: 50vh;
+    }
+}
 @media screen and (max-width:600px){
     #intern{
         height:100%;
@@ -339,15 +372,17 @@ input{
 }
 
 
-@media screen and (max-width:428px){
-    #header p{
+@media screen and (max-width:428px) {
+    #header p {
         line-height: 1.1;
         font-size: 1.5rem;
     }
-    .Absolute-Center{
+
+    .Absolute-Center {
         width: 90%;
     }
-    #floatimg{
+
+    #floatimg {
         width: 100%;
     }
 }
