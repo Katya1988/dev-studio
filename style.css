@@ -77,7 +77,6 @@ ul.menu li a:hover{
     }
         #loginform{
             text-align: center;
-
         }
 
         .textblock  {
@@ -98,7 +97,8 @@ ul.menu li a:hover{
             }
 /*========== Internatura -Katya========= */
     #intern{
-        height: 100vh;
+        min-height: 100vh;
+        height:auto;
         width: 100%;
         background-image: url(images/jumbotron.jpg);
         background-size: cover;
@@ -127,18 +127,23 @@ img.mark{
 /*=============Tabs - Katya-============ */
 
     #tech{
-        height: 100vh;
+        min-height: 100vh;
+        height:auto;
         width:100%;
         background-image: url("images/background.jpg");
         background-size: cover;
         background-position: center center;
+        padding:10% 0 10% 0;
     }
 
     .twocolumn{
         column-count: 2;
         padding: 20px !important;
     }
+.row {
+    margin: 0 auto  !important;
 
+}
 .triangle-border {
     position:relative;
     padding:15px;
@@ -185,11 +190,11 @@ img.mark{
 
 }
 .tabs .tab a{
-    color: #6D6E71;
+    color: #6D6E71 !important;
 }
 
 .tabs .tab a:hover{
-    color: rgb(0,166,227);
+    color: rgb(0,166,227) !important;
 }
 /* Variant : top
 ------------------------------------------ */
@@ -284,8 +289,12 @@ img.mark{
     border-width:0 13px 13px;
 }
 
-.
+
 /*===============Slider- Gleb=============== */
+.slidertext{
+    margin-top: 0 !important;
+    color: rgb(0,166,227) !important;
+}
 
 /*=========contact form -Gleb=============== */
 input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
@@ -297,12 +306,11 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
     height: 2rem !important;
     width: 40%!important;
     font-size: 1rem !important;
-    margin: 0 0 15px 0 !important;
+    margin: 0 !important;
     padding: 0 !important;
     box-shadow: none !important;
     box-sizing: content-box !important;
-    transition: all 0.3s !important;
-    box-shadow: none !important;
+    transition: all 0.1s !important;
 }
 
 input{
@@ -312,10 +320,10 @@ input{
     height: 2rem !important;
     width: 40% !important;
     font-size: 1rem !important;
-    margin: 0 auto 15px auto !important;
     padding: 0 !important;
     box-sizing: content-box !important;
     box-shadow: none !important;
+    margin: 0 !important;
 
 }
 
@@ -324,14 +332,14 @@ input{
     font-weight:bold !important;
     border-radius: 5px  !important;
     color: #855512 !important;
-    margin: auto
+    margin: auto !important;
 
 }
 
 
 button:focus {
-    outline: none;
-    background-color: #DDDDDD;
+    outline: none !important;
+    background-color: #DDDDDD !important;
 }
 
 .contextone{
@@ -351,7 +359,14 @@ button:focus {
     text-align: center;
     font-weight: bold;
     font-family: Tahoma, sans-serif;
+
 }
+
+label{
+    font-size: 0.8rem !important;
+    color: #ff0453 !important;
+}
+
 
 /* Footer  */
 
