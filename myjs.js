@@ -8,7 +8,7 @@ $(document).ready(function() {
 
             login:{
                 required: true,
-                maxlength: 15,
+                maxlength: 15
             },
             number:{
                 required: true,
@@ -16,8 +16,8 @@ $(document).ready(function() {
             },
             email:{
                 required: true,
-                email: true,
-            },
+                email: true
+            }
 
 
         },
@@ -26,18 +26,18 @@ $(document).ready(function() {
 
             login:{
                 required: "Это поле обязательно для заполнения",
-                maxlength: "Максимальное число символов - 15",
+                maxlength: "Максимальное число символов - 15"
             },
 
 
             number:{
                 required: "Это поле обязательно для заполнения",
-                number: "В номере могут быть только числа",
+                number: "В номере могут быть только числа"
             },
             email:{
                 required: "Это поле обязательно для заполнения",
-                email: "Не верній email",
-            },
+                email: "Неверный e-mail"
+            }
 
         }
 
