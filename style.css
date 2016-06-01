@@ -141,7 +141,7 @@ img.mark{
         padding: 20px !important;
     }
 .row {
-    margin: 0 auto  !important;
+    margin: 0 auto
 
 }
 .triangle-border {
@@ -291,11 +291,6 @@ img.mark{
 
 
 /*===============Slider- Gleb=============== */
-.slidertext{
-    margin-top: 0 !important;
-    color: rgb(0,166,227) !important;
-}
-
 /*=========contact form -Gleb=============== */
 input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
     background-color: transparent!important;
@@ -307,7 +302,7 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
     width: 40%!important;
     font-size: 1rem !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding-left: 10px !important;
     box-shadow: none !important;
     box-sizing: content-box !important;
     transition: all 0.1s !important;
@@ -320,12 +315,13 @@ input{
     height: 2rem !important;
     width: 40% !important;
     font-size: 1rem !important;
-    padding: 0 !important;
     box-sizing: content-box !important;
     box-shadow: none !important;
     margin: 0 !important;
+    padding-left: 10px !important ;
 
 }
+
 
 .submitbutton{
     width: 150px !important;
@@ -369,7 +365,30 @@ label{
 
 
 /* Footer  */
+footer{
+    font-size: 1rem;
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    bottom: 0 ;
+    margin-top:20px;
 
+}
+ footer p {
+     margin:0 10px 0 20px;
+ }
+.sheretext{
+    margin-right: 30px;
+    font-weight:bold;
+
+}
+
+footer img {
+    height: 30px;
+    display: block;
+    margin-right: 20px;
+
+}
 /* button Up */
 @media screen and (max-width:746px) {
     #floatimg {
@@ -385,7 +404,14 @@ label{
         height:100%;
     }
 }
+footer{
+    text-align: center;
+    float: none;
+}
+footer p {
 
+    margin:10px 10px 0 20px;
+}
 
 @media screen and (max-width:428px) {
     #header p {
@@ -400,4 +426,16 @@ label{
     #floatimg {
         width: 100%;
     }
+    input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+
+        width: 60% !important;
+    }
+    footer  {
+        text-align: center;
+
+    }
+    footer img{
+        margin: 10px;
+    }
 }
+
