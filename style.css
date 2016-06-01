@@ -7,18 +7,22 @@ p, h1, h2, h3, h4{
     width: 100%;
     height: 100vh;
     background-image: url("images/laptop-coffee-1940x900_35055.jpg");
+    /*background-image: url("images/fade11.jpg");*/
     background-size: cover;
     background-position: center;
 }
 
-nav{
-    background-color: transparent !important;
-    box-shadow: none !important;
+nav.mynav{
+    background-color: transparent;
+    box-shadow: none;
+    position:fixed;
+    z-index:999;
 }
 
 a.brand-logo img{
     display: inline-block;
-    margin: 15px;
+    margin: 5px;
+    max-height: 64px;
 }
 
 ul.menu li a{
@@ -33,7 +37,7 @@ ul.menu li a:hover{
 
 .header{
     position: absolute;
-    max-height:200px;
+    max-height:300px;
     left:0;
     right: 0;
     top:0;
@@ -42,6 +46,7 @@ ul.menu li a:hover{
     margin: auto 0;
     text-align: center;
     color: rgb(0,166,227);
+    background-color: rgba(255,255,255, 0.6);
 }
 
 .header h1, .header p{
@@ -100,15 +105,22 @@ ul.menu li a:hover{
         min-height: 100vh;
         height:auto;
         width: 100%;
-        background-image: url(images/jumbotron.jpg);
+        background-image: url(images/fade22.jpg);
         background-size: cover;
         background-position: center;
         padding-top: 40px;
         text-align: center;
     }
+    #intern h3{
+        padding: 10px 0;
+        margin-bottom: 30px;
+    }
 
     #intern h3, #intern p{
         color: rgb(0,166,227);
+        font-weight: bold;
+        background-color: rgba(255,255,255, 0.6);
+
     }
 
 img.mark{
@@ -123,6 +135,10 @@ img.mark{
 
 #intern ul li{
     margin-bottom: 15px;
+    text-align: left;
+    font-weight: bold;
+    list-style-image: url(images/mark12.png);
+
 }
 /*=============Tabs - Katya-============ */
 
@@ -196,6 +212,15 @@ img.mark{
 .tabs .tab a:hover{
     color: rgb(0,166,227) !important;
 }
+
+
+ul.marked{
+    padding-left: 15px;
+}
+ul.marked li{
+    list-style-image: url(images/mark12.png);
+}
+
 /* Variant : top
 ------------------------------------------ */
 
@@ -390,6 +415,27 @@ footer img {
 
 }
 /* button Up */
+
+#go-top {
+    position: fixed;
+    bottom: 25px;
+    right: 70px;
+    text-align: center;
+    cursor:pointer;
+    display:none;
+    width: 80px;
+    height: 30px;
+    background: #c0c0c0;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+#go-top:hover {
+    background: #333;
+    color: #fff;
+}
+
+/*media queries*/
 @media screen and (max-width:746px) {
     #floatimg {
         width: 100%;
@@ -402,6 +448,10 @@ footer img {
 @media screen and (max-width:600px){
     #intern{
         height:100%;
+    }
+
+    img.mark{
+        max-width: 70px;
     }
 }
 footer{
